@@ -7,20 +7,15 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-export function readConsole(object) {
+export function readConsole(object, callback) {
   rl.question("Name: ", (name) => {
     object.name = name;
     rl.question("Surname: ", (surname) => {
       object.surname = surname;
       rl.question("Age: ", (age) => {
         object.age = age;
-
-        fs.writeFile("objectRl.json", JSON.stringify(object), () => {
-          fs.readFile("objectRl.json", (err, data) => {
-            console.log(JSON.parse(data));
-            process.exit();
-          });
-        });
+        rl.close();
+        callback(object);
       });
     });
   });

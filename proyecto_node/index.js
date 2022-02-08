@@ -7,4 +7,6 @@ let id = {
   age: "28",
 };
 
-readConsole(id);
+readConsole(id, (object) => {
+  writeAndRead(object);
+});
