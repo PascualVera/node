@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<a class="title_header" href="index.html">the nerd DATABASE</a>
+			<nav class="dropdown">
+				<button class="dropdown_buttom">Sections</button>
+				<div class="dropdown_menu">
+					<a class="dropdown_links" href="films.html">Films</a>
+					<a class="dropdown_links" href="#">Comics</a>
+					<a class="dropdown_links" href="#">Series</a>
+					<a class="dropdown_links" href="films.html#film_add">Añadir Película</a>
+				</div>
+			</nav>
+		</header>
+		<div id="film_database" class="film_container"></div>
+		<main id="film_add" class="film_add">
+			<div class="form_container">
+				<div class="form">
+					<input type="text" id="nombre" class="input" placeholder="Titulo" />
+					<input type="text" id="pais" class="input" placeholder="Pais" />
+					<input type="text" id="año" class="input" placeholder="Año de lanzamiento" />
+					<input type="text" id="actores" class="input" placeholder="Actores" />
+					<input type="text" id="foto" class="input" placeholder="Foto (url)" />
+					<input type="text" class="input" id="director" placeholder="Director" />
+					<input type="text" class="input" id="escritor" placeholder="Escritor" />
+					<input type="text" class="input" id="lenguaje" placeholder="Idioma" />
+					<input type="text" class="input" id="protagonista" placeholder="Protagonista" />
+					<input type="text" class="input" id="productor" placeholder="Productora" />
+					<input type="text" class="input" id="distribuidor" placeholder="Distribuidor" />
+					<input type="text" class="input" id="genero" placeholder="Género" />
+					<input type="text" class="input" id="platform" placeholder="Plataforma" />
+					<button type="reset" id="boton" class="boton">Añadir Película</button>
+				</div>
+			</div>
+		</main>
+		<script type="module" src="addFilms.js"></script>
+	</body>
+</html>
