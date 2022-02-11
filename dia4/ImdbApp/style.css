@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@font-face {
+	font-family: "Ringbearer";
+	src: url(fonts/RingbearerMedium-51mgZ.ttf);
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Merriweather", serif;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.cabecera {
+	display: flex;
+	height: 90vh;
+	background-color: black;
+	position: relative;
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url("Media/background.jpg");
+	background-size: auto;
+}
+
+.title_container {
+	width: 60%;
+	height: 15%;
+	position: absolute;
+	top: 330px;
+	left: 100px;
+	border-bottom: 3px solid #c4b479;
+	overflow: hidden;
+	animation: animate 3s linear forwards;
+}
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	font-family: "ringbearer";
+	font-size: 75px;
+	letter-spacing: 4px;
+	background-color: #fbeca3;
+	color: transparent;
+	text-shadow: 2px 0px 4px #c4b479d7;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	word-spacing: 10px;
+}
+
+@keyframes animate {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	10% {
+		width: 10%;
+		height: 0px;
+	}
+	20% {
+		width: 20%;
+		height: 0px;
+	}
+	30% {
+		width: 30%;
+		height: 0%;
+	}
+	40% {
+		width: 40%;
+		height: 0%;
+	}
+	50% {
+		width: 50%;
+		height: 0%;
+	}
+	60% {
+		width: 60%;
+		height: 0%;
+	}
+	70% {
+		width: 60%;
+		height: 5%;
+	}
+	80% {
+		width: 60%;
+		height: 9%;
+	}
+	90% {
+		width: 60%;
+		height: 12%;
+	}
+}
+
+/*header*/
+.header {
+	height: 10vh;
+	max-width: 100vw;
+	background-color: black;
+
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	padding-left: 40px;
+	z-index: 1;
+	position: sticky;
+	top: 0;
+}
+.title_header {
+	font-size: 24px;
+	font-family: "ringbearer";
+	color: #c4b479;
+	text-decoration: none;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown_buttom {
+	cursor: pointer;
+	border: none;
+	background: none;
+	color: whitesmoke;
+	font-size: 22px;
+	padding: 4px;
+	align-items: center;
+}
+.dropdown_buttom:hover {
+	color: white;
+	text-shadow: 0px 0px 4px white;
+}
+.dropdown_menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	left: 0;
+	top: calc(100% +0.25rem);
+	color: white;
+	font-size: 18px;
+
+	opacity: 0;
+	transition: opacity 200ms ease;
+	background-color: black;
+	width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.dropdown_links {
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+}
+.dropdown > .dropdown_buttom:focus + .dropdown_menu {
+	opacity: 1;
+}
+
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/**************Films**************/
+
+.films {
+	display: flex;
+	height: 110vh;
+	background-color: black;
+	align-items: flex-end;
+}
+.film_database {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 90vh;
+	background-color: black;
+	justify-content: center;
+	gap: 30px;
+}
+.film_section {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 45%;
+	padding-bottom: 40px;
+}
+.img_container {
+	width: 100%;
+	height: 100%;
+}
+.img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/**************Añadir Films**************/
+.film_add {
+	display: flex;
+	height: 90vh;
+	background-image: url(media/ariel-j-hog-lib-final-image.jpg);
+	justify-content: center;
+	align-items: center;
+}
+.form_container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	height: 80%;
+	justify-content: flex-start;
+	padding-bottom: 40px;
+	background-color: rgba(0, 0, 0, 0.479);
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	padding: 30px;
+	gap: 10px;
+}
+
+#nombre {
+	width: 80%;
+	height: 40px;
+	padding-left: 4px;
+	font-size: 20px;
+}
+.input {
+	width: 30%;
+	height: 30px;
+	padding-left: 4px;
+	font-size: 16px;
+	border-radius: 5px;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.26);
+	color: white;
+	border: none;
+	border-bottom: 2px solid grey;
+}
+.boton {
+	width: 40%;
+	height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	background: rgb(87, 87, 87);
+}
+.boton:active {
+	background: #c4b479;
+}
+.film_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem;
+	gap: 20px;
+	background-color: #c4b47985;
+}
+.film_items {
+	font-size: 18px;
+	flex-direction: column;
+	font-weight: bold;
+	width: 40vw;
+	gap: 20px;
+	padding: 20px;
+	background-color: #c4b479;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 2px;
+}
+.imgFilm_container {
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+	margin-bottom: 10px;
+}
+.imgFilm {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	border: 4px solid black;
+}
+
+/*Media Query*/
+@media screen and (max-width: 420px) {
+	.cabecera {
+		background-image: none;
+		height: 100vh;
+	}
+	.title_container {
+		height: 30%;
+		width: 80%;
+		left: 30px;
+	}
+	.title {
+		flex-direction: column;
+		align-items: flex-start;
+		font-size: 50px;
+	}
+	.header {
+		justify-content: space-around;
+		gap: 0px;
+		padding-left: 0px;
+	}
+	.title_header {
+		font-size: 20px;
+	}
+	.dropdown_menu {
+		width: auto;
+	}
+	.film_database {
+		gap: 10px;
+		height: auto;
+	}
+	.film_section {
+		width: 80%;
+		padding-bottom: 10px;
+	}
+
+	.form_container {
+		width: 90%;
+	}
+	.form {
+		padding: 10px;
+		gap: 5px;
+	}
+	#nombre {
+		height: 30px;
+	}
+	.input {
+		width: 40%;
+		font-size: 14px;
+	}
+	.film_items {
+		width: 80%;
+		font-size: 14px;
+
+		gap: 10px;
+	}
+}
