@@ -9,3 +9,4 @@ async function createId(object, path) {
 }
 
 createId(id, "asyncTest.json")
+ 

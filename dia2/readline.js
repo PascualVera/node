@@ -7,7 +7,7 @@ let objeto = {
 	surname: "",
 	age: "",
 }
-
+ 
 const pregunta = (pregunta) => {
 	const question = new Promise((resolve, reject) => {
 		const rl = readline.createInterface({

@@ -14,4 +14,4 @@ export const write = (path, object) => {
 			})
 	})
 	return promise
-}
+} 

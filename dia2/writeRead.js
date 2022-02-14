@@ -15,3 +15,4 @@ fs.writeFile("objeto.json", JSON.stringify(objeto))
 	.catch((err) => {
 		console.log(err)
 	})
+ 

@@ -4,7 +4,7 @@ import * as readline from "readline"
 
 //
 //function
-
+ 
 export async function readConsole(object) {
 	const pregunta = (pregunta) => {
 		const question = new Promise((resolve, reject) => {

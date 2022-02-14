@@ -7,3 +7,4 @@ export const write = async (path, object) => {
 
 	console.log(JSON.parse(data))
 }
+ 
