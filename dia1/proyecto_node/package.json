@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD:dia1/proyecto_node/package.json
   "name": "proyecto_node",
   "version": "1.0.0",
   "description": "",
@@ -9,4 +10,15 @@
   "author": "",
   "license": "ISC",
   "type": "module"
+=======
+	"name": "dia2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "readline.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
+>>>>>>> dia2:dia2/package.json
 }
