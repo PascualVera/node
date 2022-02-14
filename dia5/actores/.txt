@@ -1,0 +1,39 @@
+	profesional = new Professional(
+			name.value,
+			age.value,
+			genre.value,
+			weight.value,
+			height.value,
+			hair.value,
+			race.value,
+			active.value,
+			nacionality.value,
+			oscars.value,
+			profesion.value,
+			img.value
+		)
+
+
+
+    
+//Declaracion de variables
+let name = document.querySelector("#name")
+let age = document.getElementById("age")
+let genre = document.getElementById("genre")
+let weight = document.getElementById("weight")
+let height = document.getElementById("height")
+let hair = document.getElementById("hair")
+let race = document.getElementById("race")
+let active = document.getElementById("active")
+let nacionality = document.getElementById("nationality")
+let oscars = document.getElementById("oscars")
+let profesion = document.getElementById("profesion")
+let img = document.getElementById("img")
+let idNumber = document.getElementById("idNumber")
+//Botones
+let mostrarBtn = document.querySelector("#btn-get")
+let crearBtn = document.querySelector("#btn-post")
+let actualizarBtn = document.querySelector("#btn-put")
+let eliminarBtn = document.querySelector("#btn-del")
+
+//Funciones

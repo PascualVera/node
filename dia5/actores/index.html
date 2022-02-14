@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html" class="titulo">Actores y Actrices de...</a>
+			<nav class="nav">
+				<a class="enlaces" href="profesionales.html">Professionals</a>
+			</nav>
+		</header>
+
+		<div class="form_container">
+			<div class="imagen_form">
+				<img src="Media/GANDALF.jpg" alt="" class="img" />
+			</div>
+			<form action="" class="form">
+				<input type="text" class="input" placeholder="Nombre" id="name" /><input
+					type="text"
+					class="input"
+					placeholder="Edad"
+					id="age"
+				/><input type="text" class="input" placeholder="Género" id="genre" /><input
+					type="text"
+					class="input"
+					placeholder="Peso"
+					id="weight"
+				/><input type="text" class="input" placeholder="Altura" id="height" /><input
+					type="text"
+					class="input"
+					placeholder="Color de pelo"
+					id="hair"
+				/><input type="text" class="input" placeholder="Raza" id="race" /><input
+					type="text"
+					class="input"
+					placeholder="¿Sigue en Activo?"
+					id="active"
+				/><input type="text" class="input" placeholder="Nacionalidad" id="nationality" /><input
+					type="text"
+					class="input"
+					placeholder="Número de Oscars"
+					id="oscars"
+				/><input type="text" class="input" placeholder="Profesión" id="profession" /><input
+					type="text"
+					class="input"
+					placeholder="Foto (url)"
+					id="img"
+				/>
+				<input type="text" class="input" placeholder="ID" id="idNumber" />
+			</form>
+			<div class="botones">
+				<button class="boton" id="btn-get">Mostrar</button
+				><button class="boton" id="btn-post">Crear</button
+				><button class="boton" id="btn-put">Actualizar</button
+				><button class="boton" id="btn-del">Eliminar</button>
+			</div>
+		</div>
+		<div class="profesionales_database"></div>
+
+		<script src="functions.js"></script>
+	</body>
+</html>
