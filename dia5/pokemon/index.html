@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="titulo">Pokepedia</h1>
+		</header>
+		<main class="container">
+			<div class="form">
+				<form action="getpokemon">
+					<input type="text" id="input" placeholder="Name" />
+				</form>
+				<button id="boton">Get pokemon</button>
+			</div>
+			<div class="pokemon_data"></div>
+		</main>
+		<script src="fetch.js"></script>
+	</body>
+</html>
