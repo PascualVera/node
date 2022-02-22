@@ -146,6 +146,7 @@ const mostrarTodos = (database) => {
 const mostrarId = (database) => {
 	let post = `<div class=actor>
 		<figure class=actor_img_container><img class=actor_img src=${database.foto}></figure>
+		<div class = actor_info>
 		<p>Nombre: ${database.name}</p>
 		<p>Edad: ${database.age}</p>
 		<p>Género: ${database.genre}</p>
@@ -156,6 +157,7 @@ const mostrarId = (database) => {
 		<p>Actividad: ${database.isRetired} </p>
 		<p>Oscars: ${database.oscarNum} </p>
 		<p>Profesion: ${database.profesion} </p>
+		</div>
 		</div>
 		`
 

@@ -1,5 +1,4 @@
 const cors = require("cors")
-const { request, query } = require("express")
 const express = require("express")
 const { Professional: Professional } = require("./professional")
 const app = express()

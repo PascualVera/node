@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	font-family: "Ubuntu", serif;
 }
+body {
+	background: linear-gradient(0deg, rgba(209, 209, 209, 1) 66%, rgba(230, 230, 230, 1) 97%);
+}
 .header {
 	display: flex;
 	height: 15vh;
@@ -98,17 +101,21 @@
 	background: rgb(209, 209, 209);
 	background: linear-gradient(0deg, rgba(209, 209, 209, 1) 66%, rgba(230, 230, 230, 1) 97%);
 	padding-left: 120px;
+	justify-content: center;
+	margin-bottom: 40px;
 }
 .actor {
 	display: flex;
 	flex-wrap: wrap;
-	width: 500px;
+	width: 600px;
 	height: 400px;
 	margin-top: 30px;
 	padding-bottom: 20px;
-	background-color: rgba(209, 209, 207, 0);
+	background-color: rgba(209, 209, 207, 0.7);
 	border-radius: 10px;
 	overflow: hidden;
+	border: 1px solid gray;
+	box-shadow: 1px 0px 4px 0.1px black;
 }
 .actor_img_container {
 	overflow: hidden;
@@ -116,6 +123,8 @@
 	height: 200px;
 	display: flex;
 	justify-content: center;
+	border: 1px solid grey;
+	box-shadow: 0px 0px 4px 0.1px black;
 }
 .actor_img {
 	width: 200px;
